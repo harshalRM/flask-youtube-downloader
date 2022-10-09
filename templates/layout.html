@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>YTD - YouTube Video Downloader</title>
+</head>
+<body>
+    <h2 class="text-center py-4 my-4"><i class="fa-brands fa-youtube me-2"></i>YTD</h2>
+    <hr>
+    <div class="container my-3 py-3">
+        <div class="jumbotron text-center my-3 py-3">
+            <h1 class="fw-bold my-4 text-danger">YouTube Video Downloader</h1>
+            <p class="lead my-4">Paste your link and download your video in any format</p>
+            <form method="POST" class="form-inline">
+                <div class="input-groups my-4">
+                    <input type="text" name="url" class="w-50 p-3 border-2 rounded-2 my-3 fw-bold" placeholder="Paste Your link here....">
+                    <button type="submit" class="p-3 border-2 rounded-2 ms-3 btn btn-primary ">Download</button>
+                </div>
+                <label for="streaming_options" class="my-4 fw-bold me-2">Choose a resolution : </label>
+                <select name="resolution" class="my-4 fw-bold text-center">
+                    <option value="144p" class="fw-bold">144p</option>
+                    <option value="240p" class="fw-bold">240p</option>
+                    <option value="360p" class="fw-bold">360p</option>
+                    <option value="480p" class="fw-bold">480p</option>
+                    <option value="720p" class="fw-bold">720p</option>
+                    <option value="1080p" class="fw-bold">1080p</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div class="container text-center py-4 my-4">
+        <h2 class="my-4">Best YouTube Video Downloader</h2>
+        <p class="lead text-justify my-3">YTD YouTube Downloader helps you save Youtube videos to your device. You can choose from a variety of formats and qualities to download.
+
+            YTD is a utility website for downloading user-uploaded videos from YouTube. It can be used by educators to save videos for classroom use, by YouTubers to save backup copies of their own uploaded videos, and by users worldwide to watch videos on hardware that cannnot run a standard web browser, or to watch videos in their full resolution over slow or unreliable Internet connections.</p>
+    </div>
+    <hr>
+    <div class="container py-4 my-4  text-center">
+        <div class="row justify-content-around">
+            <div class="col-md-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="{{url_for('static', filename='easy.png')}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3>Easy To Use</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="{{url_for('static', filename='safe.png')}}" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3>100% safe</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow" style="width: 18rem;">
+                    <img src="{{url_for('static', filename='file.jpg')}}" height="200px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3>Full File Format</h3>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container py-4 my-4  text-center">
+        <h2 class="fw-bold my-4">How To Download</h2>
+        <div class="row justify-content-around my-3">
+            <div class="col-md-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{url_for('static', filename='1.jpg')}}" class="img-fluid rounded-start"  alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">                      
+                          <p class="card-text">Paste YouTube url or enter keywords into the search box.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{url_for('static', filename='2.jpg')}}" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">                
+                          <p class="card-text">	Choose your resolution  and click "Download" button.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{url_for('static', filename='3.jpg')}}" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">     
+                          <p class="card-text">Wait until the video is downloaded. Very easy and fast.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <span class="text-muted">&copy; 2021 , YTD - YouTube Video Downloader</span>
+          </div>   
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><i class="fa-brands fa-facebook"></i></li>
+            <li class="ms-3"><i class="fa-brands fa-instagram"></i></li>
+            <li class="ms-3"><i class="fa-brands fa-twitter"></i></li>
+          </ul>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana:wght@700&display=swap');
+
+h1, h2{
+    font-family: 'Lusitana', serif;
+    font-size: 2.3em;
+}
+hr{
+    border: 8px solid rgb(8, 9, 8);
+    border-radius: 3px;
+}
+label {
+    font-size: 1.5em;
+}
+select{
+    font-size: 1.2em;
+}
